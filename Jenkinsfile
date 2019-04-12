@@ -3,7 +3,7 @@ node{
 	git 'https://github.com/mrizgit/my-app.git'
   }
    stage('MR Compile and Package'){
-	   def mvnHome = tool name: 'maven', type: 'maven'
+	   def mvnHome = tool name: 'maven-3', type: 'maven'
 	   sh "${mvnHome}/bin/mvn package"
    }
 }
